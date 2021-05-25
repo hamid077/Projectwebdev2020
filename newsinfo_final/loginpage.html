@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <title>Login Here</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="loginpage.css">
+    </head>
+
+
+    <body>
+
+        <div class="container-fluid banner">
+            <div class="row"> 
+                <div class="col-md-12">
+                 <nav class="navbar"> 
+                     <div  class="logo">SinFo  </div>
+                       <ul class="nav">
+                            <li class="nav-item">
+                               <a class="nav-link" href="homepage.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="explore.html">EXPLORE</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="about.html">ABOUT</a>
+                            </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="loginpage.html">LOGIN</a>
+                           </li>
+                       </ul>
+                   </nav>
+                </div>
+            </div> 
+        </div>    
+        <div class="loginform" > 
+            <h1>Login Here</h1>
+            <form class="login_form" action="" id="form1" >
+                <div class="font">Enter Username</div>
+                <div id="name">Enter Name</div>
+                <input type="text" name="" id="username">
+                <div class="font2">Password</div>
+                <div id="pass">Enter Password</div>
+                <input type="password" name="" id="password">
+            
+                <button onclick="valid()" type="button">Login</button>  
+
+                <p class="or">OR</p>             
+                <a href="signup.html"> <button type="button" class="signupbtn">Sign up now</button> </a>
+                
+                </form>
+
+        </div>
+    <script type="text/javascript">
+    function valid()
+        {
+        const form1 = document.getElementById('form1').value;
+        const name = document.getElementById('name').value;
+        const username = document.getElementById('username').value;
+        const pass = document.getElementById('pass').value;
+        const password = document.getElementById('password').value;
+        
+        
+        
+        var format = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+        
+        
+        
+        if(username=="" || password=="" )
+        alert("Cannot leave any fields empty");
+        else if(format.test(username[0]))
+        alert("username cannot start with special characters");
+        else if(isNaN(username[0])==false)
+        alert("username cannot start with numbers");
+        
+        else
+        window.location.href = "file:///Users/abdulhamid/Documents/newsinfo/explore.html";
+        }   
+        </script>
+
+<footer class="footer-bs">
+    <div class="row">
+      <div class="col-md-3 footer-brand animated fadeInLeft">
+          <h2>SinFo</h2>
+           <p>Login or Signup to get started!</p>
+        </div>
+      <div class="col-md-4 footer-nav animated fadeInUp">
+          <h4>Go to-</h4>
+          <div class="col-md-6">
+                <ul class="pages">
+                    <li><a href="homepage.html">HOMEPAGE</a></li>
+                    <li><a href="explore.html">EXPLORE PAGE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="loginpage.html">LOGIN</a></li>
+                    <li><a href="signup.html">SIGNUP NOW</a></li>
+                </ul>
+            </div>
+          <div class="col-md-6">
+                <ul class="list">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+      <div class="col-md-2 footer-social animated fadeInDown">
+          <h4>Follow Us</h4>
+          <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+      <div class="col-md-3 footer-ns animated fadeInRight">
+          <h4>ENQUIRY</h4>
+            <p> Any Doubts feel FREE to contact us</p>
+            <p>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Ask...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                  </span>
+                </div>
+             </p>
+        </div>
+    </div>
+ </footer>
+
+
+    </body>
+</html>

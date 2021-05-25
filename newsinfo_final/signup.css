@@ -1,0 +1,115 @@
+body{
+    font-family: 'Pacifico', cursive;
+	margin:0;
+	padding:0;
+	background:#fff;
+	font-family: 'Raleway',sans-serif;
+	color: #fff;
+}
+.banner{
+	height: 100vh;
+	background-image:url('overlay.png'),url('backgroundhp.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+nav .logo{
+    font-family: 'Pacifico', cursive;
+    color:#fff;
+    font-size:3rem;
+    font-weight: 700;
+	margin-left: 2%;
+
+}
+
+.banner .nav li a{
+	text-decoration: none;
+	color:#aaa;
+	font-size: 1.6em;
+	padding: 5px 10px;
+	transition: 0.5 ease;
+}
+.banner .nav li a:hover{
+	background-color: dimgrey;
+}
+
+.banner .info{
+	margin-top:15%;
+	transform: translateY(-15%);
+}
+
+.signupform{
+    width: 450px;
+    height: 700px;
+    background: rgb(36, 35, 35);
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 60px 40px;
+}
+.signupform h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.signupform input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.signupform input[type="text"], input[type="Password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 45px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.signupform .font{
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+
+    
+    }
+
+
+button{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: red;
+}
+.signupform #email_error,
+.signupform #pass_error,
+.signupform #cpass_error
+{
+    margin-top: 12px;
+    
+    font-size: 12px;
+    color: rgb(253, 253, 253);
+    background: rgb(36, 35, 35)
+   
+    
+    
+}
+
+
+.or{
+    
+    text-align: center;
+}
