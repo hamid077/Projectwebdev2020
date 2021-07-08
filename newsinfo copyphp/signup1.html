@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <title>Signup page</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="loginpage.css">
+        <link rel="stylesheet" href="signup.css">
+        <link rel="stylesheet" href="signup1.css">
+    </head>
+
+
+
+    <body>
+
+
+        <body>
+            <div class="container-fluid banner">
+                <div class="row"> 
+                    <div class="col-md-12">
+                     <nav class="navbar"> 
+                         <div  class="logo">SinFo  </div>
+                           <ul class="nav">
+                                <li class="nav-item">
+                                   <a class="nav-link" href="homepage.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="explore.html">EXPLORE</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="about.html">ABOUT</a>
+                                </li>
+                               <li class="nav-item">
+                                  <a class="nav-link" href="loginpage.html">LOGIN</a>
+                               </li>
+                           </ul>
+                       </nav>
+                    </div>
+                </div> 
+            </div>   
+    
+        <div class="signup1form" > 
+            <h1>Sign Up Here!</h1>
+            <form class="signup_form" action="" id="form1" >
+                <div class="font">Enter Username</div>
+                <div id="email_error">Enter Name</div>
+                <input type="text" name="" id="username">
+                <div class="font2">Password</div>
+                <div id="pass_error">Enter Password</div>
+                <input type="password" name="" id="password">
+                <div class="font3">Confirm Password</div>
+                <div id="cpass_error">Enter Password</div>
+                <input type="password" name="" id="cpassword">
+                <button onclick="valid()" type="button">Sign Up</button>    
+                       
+               
+                
+            </form>
+
+        </div>
+    <script type="text/javascript">
+    function valid()
+        {
+        const form1 = document.getElementById('form1').value;
+        const email_error = document.getElementById('email_error').value;
+        const username = document.getElementById('username').value;
+        const pass_error = document.getElementById('pass_error').value;
+        const password = document.getElementById('password').value;
+        const cpass_error = document.getElementById('cpass_error').value;
+        const cpassword = document.getElementById('cpassword').value;
+        
+        
+        var format = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+        
+        
+        
+        if(username=="" || password=="" || cpassword=="")
+        alert("Cannot leave any fields empty");
+        else if(format.test(username[0]))
+        alert("username cannot start with special characters");
+        else if(isNaN(username[0])==false)
+        alert("username cannot start with numbers");
+        else if(cpassword!=password)
+        alert("password is not matched");
+        else
+        
+        window.location.href = "file:///Users/abdulhamid/Documents/newsinfo/explore.html";
+        }   
+        </script>
+
+
+    </body>
+</html>
